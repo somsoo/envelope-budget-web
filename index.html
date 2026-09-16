@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>YNAB형 제로베이스 엔벨로프 예산 가계부 | 100% 로컬 예산 관리 (Envelope Budget)</title>
+    <meta content="식비·주거비 등 카테고리별 가상 봉투에 예산을 할당해 지출을 통제하는 로컬퍼스트 제로베이스 예산 가계부." name="description"/>
+    <link href="https://envelope.enjoy-onepage.com/" rel="canonical"/>
+    <meta content="website" property="og:type"/>
+    <meta property="og:locale" content="ko_KR">
+    <meta content="https://envelope.enjoy-onepage.com/" property="og:url"/>
+    <meta content="Envelope Budget - 제로베이스 엔벨로프 예산 가계부" property="og:title"/>
+    <meta content="은행 연동 없는 100% 프라이버시 제로베이스 봉투 예산 관리기입니다." property="og:description"/>
+    <meta content="https://envelope.enjoy-onepage.com/og-image.png" property="og:image"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="Envelope Budget - 제로베이스 엔벨로프 예산 가계부" name="twitter:title"/>
+    <meta content="은행 연동 없는 100% 프라이버시 제로베이스 봉투 예산 관리기입니다." name="twitter:description"/>
+    <meta content="https://envelope.enjoy-onepage.com/og-image.png" name="twitter:image"/>
+    <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <script async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://envelope.enjoy-onepage.com/#webapp",
+          "name": "Envelope Budget - YNAB형 엔벨로프 예산 가계부",
+          "url": "https://envelope.enjoy-onepage.com/",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "description": "식비·주거비 등 카테고리별 봉투에 예산을 할당해 지출을 통제하는 로컬퍼스트 가계부.",
+          "image": "https://envelope.enjoy-onepage.com/og-image.png",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://envelope.enjoy-onepage.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "엔벨로프(Envelope) 제로베이스 예산법이란 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "월 소득의 모든 원(Every Dollar)에 목적을 부여하여 식비, 주거비, 여가 등 가상 봉투에 미리 예산을 100% 배정하는 기법입니다. 해당 봉투의 잔액 내에서만 지출하므로 불필요한 과소비를 원천 방지합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "YNAB처럼 매년 15만 원 이상의 구독료를 내야 하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "아닙니다. Envelope Budget은 기성 고가 앱과 달리 회원가입 및 유료 구독 없이 브라우저 로컬 환경에서 100% 평생 무료로 작동합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "내 금융 계좌나 소비 내역이 외부 서버로 전송되나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "전혀 전송되지 않습니다. 모든 예산 할당과 지출 기록은 사용자의 웹 브라우저 localStorage에만 저장되어 금융 보안 사고 위험이 0%입니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style id="layout-shield">
+      html, body { max-width: 100%; overflow-x: hidden; }
+      .manual-ad-box { width: 100%; max-width: 960px; margin-left: auto; margin-right: auto; text-align: center; overflow: hidden; }
+      .manual-ad-box ins { max-width: 100% !important; overflow: hidden !important; }
+      :focus-visible { outline: 2px solid #3b82f6 !important; outline-offset: 2px !important; }
+      input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible { outline: 2px solid #2563eb !important; outline-offset: 1px !important; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans min-h-screen flex flex-col justify-between">
+    <div class="manual-ad-box ad-top-banner" style="width: 100%; max-width: 960px; margin: 8px auto 16px; text-align: center;">
+        <ins class="adsbygoogle" data-ad-client="ca-pub-2228289204702106" data-ad-format="horizontal" data-ad-slot="3824727725" data-full-width-responsive="true" style="display:inline-block;width:100%;height:60px;"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 text-slate-900 font-bold text-lg hover:text-emerald-600 transition">
+                <span class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-black text-sm shadow-sm"><i class="fa-solid fa-envelope-open-text"></i></span>
+                <span>Envelope Budget</span>
+            </a>
+            <div class="flex items-center gap-2">
+                <button id="resetMonthBtn" class="px-3 py-1.5 text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg transition" aria-label="월간 초기화">
+                    <i class="fa-solid fa-arrows-rotate mr-1"></i>새 달 시작
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-4xl mx-auto px-4 pt-6 pb-2 w-full">
+        <div class="border-b border-slate-200 pb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 mb-2">
+                    <i class="fa-solid fa-piggy-bank text-emerald-600"></i><span>YNAB식 제로베이스 봉투 예산법</span>
+                </div>
+                <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                    제로베이스 엔벨로프 예산 가계부
+                </h1>
+                <p class="text-slate-600 text-xs sm:text-sm mt-1">
+                    통장 쪼개기를 웹으로 구현! 봉투별로 예산을 할당하고 남은 잔액을 실시간으로 통제하세요.
+                </p>
+            </div>
+            <!-- Overall Budget Summary -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-3 sm:p-4 text-center min-w-[150px] shadow-sm">
+                <div class="text-[11px] font-bold text-slate-500">전체 잔여 예산</div>
+                <div class="text-2xl font-black text-emerald-600 mt-0.5" id="totalRemainingText">0원</div>
+                <div class="text-[11px] text-slate-400 mt-0.5" id="totalBudgetSub">총 배정: 0원</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workspace (1:1 Left Action, Right Envelopes) -->
+    <main class="max-w-4xl mx-auto px-4 py-4 w-full flex-grow">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            <!-- Left 5 cols: Spend Form & Envelope Config -->
+            <section class="lg:col-span-5 bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-4">
+                <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2">
+                    <i class="fa-solid fa-receipt text-emerald-600"></i>지출 발생 기록
+                </h2>
+                <form id="spendForm" class="space-y-3">
+                    <div>
+                        <label for="spendEnvelope" class="block text-xs font-bold text-slate-700 mb-1">차감할 봉투 선택 *</label>
+                        <select id="spendEnvelope" class="w-full text-base sm:text-sm px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium text-slate-900" aria-label="봉투 선택">
+                            <!-- Envelopes options -->
+                        </select>
+                    </div>
+                    <div>
+                        <label for="spendAmount" class="block text-xs font-bold text-slate-700 mb-1">지출 금액(원) *</label>
+                        <input type="number" id="spendAmount" min="100" step="100" required placeholder="예: 12000" class="w-full text-base sm:text-sm px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium text-slate-900" aria-label="지출 금액">
+                    </div>
+                    <div>
+                        <label for="spendMemo" class="block text-xs font-bold text-slate-700 mb-1">지출 내용 (선택)</label>
+                        <input type="text" id="spendMemo" placeholder="예: 점심 순대국밥" class="w-full text-base sm:text-sm px-3.5 py-2 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium text-slate-900" aria-label="지출 내용">
+                    </div>
+                    <button type="submit" class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm rounded-xl shadow-md transition flex items-center justify-center gap-2" aria-label="지출 차감">
+                        <i class="fa-solid fa-minus-circle"></i><span>봉투에서 차감하기</span>
+                    </button>
+                </form>
+
+                <div class="pt-4 border-t border-slate-100">
+                    <h3 class="text-xs font-bold text-slate-700 mb-2">새 봉투 추가</h3>
+                    <div class="flex gap-2">
+                        <input type="text" id="newEnvName" placeholder="봉투명 (예: 식비)" class="flex-1 text-xs px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500" aria-label="새 봉투명">
+                        <input type="number" id="newEnvBudget" placeholder="예산(원)" class="w-24 text-xs px-2 py-2 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500" aria-label="새 봉투 예산">
+                        <button id="addEnvBtn" class="px-3 py-2 bg-slate-800 hover:bg-slate-900 text-white rounded-xl text-xs font-bold" aria-label="추가">추가</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right 7 cols: Envelope Cards (lg:sticky) -->
+            <section class="lg:col-span-7 space-y-4">
+                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2">
+                            <i class="fa-solid fa-wallet text-slate-700"></i>내 예산 봉투 현황
+                        </h3>
+                        <button id="copyEnvelopeBtn" class="text-xs font-bold text-emerald-600 hover:text-emerald-800 flex items-center gap-1" aria-label="현황 복사">
+                            <i class="fa-regular fa-copy"></i><span>현황 복사</span>
+                        </button>
+                    </div>
+
+                    <div id="envelopesContainer" class="space-y-3 max-h-[500px] overflow-y-auto pr-1">
+                        <!-- Dynamic Envelopes -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Toast -->
+    <div id="toastNotification" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900/90 text-white text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-xl z-50 transition-opacity duration-300 opacity-0 pointer-events-none flex items-center gap-2">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i><span id="toastMessage">안내 메시지</span>
+    </div>
+
+    <!-- 📖 E-E-A-T Guide Section (Q1~Q7) -->
+    <section class="max-w-4xl mx-auto my-8 px-4">
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+        <div class="border-b border-slate-200 pb-4">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700 mb-2">
+            <span>⚖️ 2026년 최신 금융소비자 기준</span>
+          </div>
+          <h3 class="text-xl font-black text-slate-900 tracking-tight">
+            제로베이스 엔벨로프(Envelope) 가계부 예산 설계 가이드
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">
+            본 도구는 금융감독원 및 행동경제학의 '심적 회계(Mental Accounting)' 이론에 기반하여 과소비를 차단합니다.
+          </p>
+        </div>
+
+        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">핵심 산출 공식 (Formula & Rule)</div>
+          <div class="text-sm sm:text-base font-extrabold text-slate-900 font-mono leading-relaxed">
+            봉투 잔액 = 초기 할당 예산 - 총 지출액 | 예산 소진율(%) = (총 지출액 / 초기 할당 예산) × 100
+          </div>
+        </div>
+
+        <div class="p-4 bg-blue-50/50 rounded-xl border border-blue-100">
+          <div class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">💡 실전 계산 사례 (Case Study)</div>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            예를 들어, 월 50만 원의 식비 봉투를 배정하고 30만 원을 지출했을 때 소진율 60%와 남은 잔액 20만 원이 시각적 프로그레스 바로 표시되어, 월말까지 하루 가용 식비(약 2만 원)를 즉시 통제할 수 있습니다.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2"><span>❓</span> 자주 묻는 질문 (FAQ)</h4>
+          <details class="group border border-slate-200 rounded-xl p-4">
+            <summary class="flex items-center justify-between cursor-pointer font-bold text-sm text-slate-800">
+              <span>Q. 엔벨로프(Envelope) 제로베이스 예산법이란 무엇인가요?</span>
+              <span class="transition group-open:rotate-180 text-slate-400 text-xs">▼</span>
+            </summary>
+            <div class="text-xs text-slate-600 mt-3 leading-relaxed border-t border-slate-100 pt-3">
+              월 소득의 모든 원(Every Dollar)에 목적을 부여하여 식비, 주거비, 여가 등 가상 봉투에 미리 예산을 100% 배정하는 기법입니다. 해당 봉투의 잔액 내에서만 지출하므로 불필요한 과소비를 원천 방지합니다.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl p-4">
+            <summary class="flex items-center justify-between cursor-pointer font-bold text-sm text-slate-800">
+              <span>Q. YNAB처럼 매년 15만 원 이상의 구독료를 내야 하나요?</span>
+              <span class="transition group-open:rotate-180 text-slate-400 text-xs">▼</span>
+            </summary>
+            <div class="text-xs text-slate-600 mt-3 leading-relaxed border-t border-slate-100 pt-3">
+              아닙니다. Envelope Budget은 기성 고가 앱과 달리 회원가입 및 유료 구독 없이 브라우저 로컬 환경에서 100% 평생 무료로 작동합니다.
+            </div>
+          </details>
+          <details class="group border border-slate-200 rounded-xl p-4">
+            <summary class="flex items-center justify-between cursor-pointer font-bold text-sm text-slate-800">
+              <span>Q. 내 금융 계좌나 소비 내역이 외부 서버로 전송되나요?</span>
+              <span class="transition group-open:rotate-180 text-slate-400 text-xs">▼</span>
+            </summary>
+            <div class="text-xs text-slate-600 mt-3 leading-relaxed border-t border-slate-100 pt-3">
+              전혀 전송되지 않습니다. 모든 예산 할당과 지출 기록은 사용자의 웹 브라우저 localStorage에만 저장되어 금융 보안 사고 위험이 0%입니다.
+            </div>
+          </details>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold text-slate-900 mb-3 flex items-center gap-2">
+            <span>📋</span> 반드시 챙겨야 할 실전 체크리스트
+          </h4>
+          <ul class="text-xs sm:text-sm text-slate-600 space-y-2">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold">✓</span><span>매월 급여일 직후 필수 고정비(월세, 보험, 공과금) 봉투를 1순위로 채워두세요.</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold">✓</span><span>특정 봉투 잔액이 바닥났을 때는 다른 봉투에서 예산을 전용하지 말고 지출을 동결하세요.</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold">✓</span><span>월말에 남은 봉투 잔액은 비상금 봉투나 저축 봉투로 즉시 이체하여 종잣돈을 모으세요.</span></li>
+          </ul>
+        </div>
+
+        <div class="pt-4 border-t border-slate-100 text-[11px] text-slate-500 leading-relaxed">
+          <strong>⚠️ 면책 고지:</strong> 본 예산 관리 도구는 개인의 소비 통제를 돕기 위한 모의 시뮬레이터입니다. 금융기관 공인 자산 관리 서비스가 아니며 실제 은행 잔고와 차이가 있을 수 있습니다.
+        </div>
+      </div>
+    </section>
+
+    <div class="manual-ad-box ad-bottom-banner" style="width: 100%; max-width: 960px; margin: 24px auto 16px; text-align: center;">
+        <ins class="adsbygoogle" data-ad-client="ca-pub-2228289204702106" data-ad-format="auto" data-ad-slot="3416334507" data-full-width-responsive="true" style="display:block"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <footer class="border-t border-slate-200 bg-white py-8 px-4 text-center">
+        <div class="max-w-4xl mx-auto text-xs text-slate-500 space-y-3">
+            <div class="flex flex-wrap justify-center gap-4 text-xs font-medium">
+                <a class="hover:text-emerald-600 transition" href="/privacy.html">개인정보처리방침</a>
+                <span>·</span>
+                <a class="hover:text-emerald-600 transition" href="/terms.html">이용약관</a>
+            </div>
+            <p>100% 무서버 클라이언트 사이드 연산 | 데이터 외부 전송 제로 보증</p>
+            <p class="text-[11px] text-slate-400">© 2026 Envelope Budget. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const STORAGE_KEY = 'enjoy_envelope_budget_v1';
+        let envelopes = [];
+
+        function showToast(msg) {
+            const toast = document.getElementById('toastNotification');
+            const toastMsg = document.getElementById('toastMessage');
+            if (toast && toastMsg) {
+                toastMsg.innerText = msg;
+                toast.classList.remove('opacity-0', 'pointer-events-none');
+                setTimeout(() => toast.classList.add('opacity-0', 'pointer-events-none'), 2200);
+            }
+        }
+
+        function loadData() {
+            try {
+                const raw = localStorage.getItem(STORAGE_KEY);
+                envelopes = raw ? JSON.parse(raw) : [
+                    { id: 'env_1', name: '🍱 식비/외식', budget: 500000, spent: 180000 },
+                    { id: 'env_2', name: '☕ 카페/간식', budget: 100000, spent: 45000 },
+                    { id: 'env_3', name: '🚌 교통/통신', budget: 150000, spent: 82000 },
+                    { id: 'env_4', name: '🎬 문화/여가', budget: 200000, spent: 95000 }
+                ];
+            } catch(e) {
+                envelopes = [];
+            }
+            renderEnvelopes();
+        }
+
+        function saveData() {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(envelopes));
+            } catch(e) {}
+            renderEnvelopes();
+        }
+
+        function renderEnvelopes() {
+            const container = document.getElementById('envelopesContainer');
+            const select = document.getElementById('spendEnvelope');
+            container.innerHTML = '';
+            select.innerHTML = '';
+
+            let totalBudget = 0;
+            let totalSpent = 0;
+
+            envelopes.forEach(env => {
+                totalBudget += env.budget;
+                totalSpent += env.spent;
+                const remaining = env.budget - env.spent;
+                const percent = env.budget > 0 ? Math.min(100, Math.round((env.spent / env.budget) * 100)) : 0;
+                const isExceeded = remaining < 0;
+
+                // Select option
+                const opt = document.createElement('option');
+                opt.value = env.id;
+                opt.innerText = `${env.name} (잔여: ${remaining.toLocaleString()}원)`;
+                select.appendChild(opt);
+
+                // Card Element
+                const card = document.createElement('div');
+                card.className = `p-4 rounded-xl border transition ${isExceeded ? 'bg-rose-50/50 border-rose-200' : 'bg-white border-slate-200'}`;
+                card.innerHTML = `
+                    <div class="flex items-center justify-between mb-1.5">
+                        <div class="font-bold text-sm text-slate-900">${env.name}</div>
+                        <div class="text-right">
+                            <span class="text-xs text-slate-400">잔액: </span>
+                            <span class="font-black text-sm ${isExceeded ? 'text-rose-600' : 'text-emerald-600'}">${remaining.toLocaleString()}원</span>
+                        </div>
+                    </div>
+                    <!-- Progress Bar -->
+                    <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden mb-2">
+                        <div class="h-2.5 rounded-full ${isExceeded ? 'bg-rose-500' : (percent > 80 ? 'bg-amber-500' : 'bg-emerald-500')}" style="width: ${percent}%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400">
+                        <span>예산: ${env.budget.toLocaleString()}원</span>
+                        <span>지출: ${env.spent.toLocaleString()}원 (${percent}%)</span>
+                        <button onclick="deleteEnv('${env.id}')" class="text-slate-300 hover:text-rose-500 transition ml-2"><i class="fa-regular fa-trash-can"></i></button>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            const totalRemaining = totalBudget - totalSpent;
+            document.getElementById('totalRemainingText').innerText = `${totalRemaining.toLocaleString()}원`;
+            document.getElementById('totalBudgetSub').innerText = `총 예산: ${totalBudget.toLocaleString()}원 | 지출: ${totalSpent.toLocaleString()}원`;
+        }
+
+        window.deleteEnv = function(id) {
+            if (confirm("이 봉투를 삭제하시겠습니까?")) {
+                envelopes = envelopes.filter(e => e.id !== id);
+                saveData();
+                showToast("봉투가 삭제되었습니다.");
+            }
+        };
+
+        document.getElementById('spendForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const envId = document.getElementById('spendEnvelope').value;
+            const amount = parseInt(document.getElementById('spendAmount').value, 10);
+            if (!envId || !amount) return;
+
+            envelopes = envelopes.map(env => {
+                if (env.id === envId) {
+                    return { ...env, spent: env.spent + amount };
+                }
+                return env;
+            });
+
+            saveData();
+            document.getElementById('spendAmount').value = '';
+            document.getElementById('spendMemo').value = '';
+            showToast(`${amount.toLocaleString()}원이 봉투에서 차감되었습니다.`);
+        });
+
+        document.getElementById('addEnvBtn').addEventListener('click', () => {
+            const name = document.getElementById('newEnvName').value.trim();
+            const budget = parseInt(document.getElementById('newEnvBudget').value, 10);
+            if (!name || !budget) {
+                alert("봉투명과 예산을 입력하세요.");
+                return;
+            }
+
+            envelopes.push({
+                id: 'env_' + Date.now(),
+                name: '📁 ' + name,
+                budget: budget,
+                spent: 0
+            });
+            saveData();
+            document.getElementById('newEnvName').value = '';
+            document.getElementById('newEnvBudget').value = '';
+            showToast("새 봉투가 추가되었습니다.");
+        });
+
+        document.getElementById('resetMonthBtn').addEventListener('click', () => {
+            if (confirm("새 달을 시작하시겠습니까? 모든 봉투의 지출액이 0원으로 초기화됩니다.")) {
+                envelopes = envelopes.map(e => ({ ...e, spent: 0 }));
+                saveData();
+                showToast("모든 봉투가 새 예산으로 초기화되었습니다.");
+            }
+        });
+
+        document.getElementById('copyEnvelopeBtn').addEventListener('click', () => {
+            let text = "💰 엔벨로프 예산 현황
+------------------
+";
+            envelopes.forEach(e => {
+                const rem = e.budget - e.spent;
+                text += `${e.name}: 잔여 ${rem.toLocaleString()}원 (지출 ${e.spent.toLocaleString()} / 예산 ${e.budget.toLocaleString()})
+`;
+            });
+            text += `
+👉 바로가기: https://envelope.enjoy-onepage.com/`;
+
+            navigator.clipboard.writeText(text).then(() => showToast("예산 현황이 복사되었습니다."));
+        });
+
+        loadData();
+    </script>
+</body>
+</html>
