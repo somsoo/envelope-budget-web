@@ -427,9 +427,9 @@
         });
 
         document.getElementById('copyEnvelopeBtn').addEventListener('click', () => {
-            let text = "💰 엔벨로프 예산 현황
+            let text = `💰 엔벨로프 예산 현황
 ------------------
-";
+`;
             envelopes.forEach(e => {
                 const rem = e.budget - e.spent;
                 text += `${e.name}: 잔여 ${rem.toLocaleString()}원 (지출 ${e.spent.toLocaleString()} / 예산 ${e.budget.toLocaleString()})
